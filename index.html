@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="icon" href="/img/book icon.png icon.png">
+    <title>APP</title>
+</head>
+<body>
+    <div data-vista="cursando" id="cursando" class="container-lg p-0">
+        <header class="container-lg px-2 d-flex gap-5 justify-content-center py-5">
+            <p class="fs-5 btn btn-warning rounded-pill px-3 restantes text-white col-2">Restantes</p>
+            <h1 class="blog-header-logo fs-3">Cursando</h1>
+            <p class="fs-5 btn btn-success rounded-pill px-3 cursadas text-white col-2">Cursadas</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-info-lg info" viewBox="0 0 16 16">
+                <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"/>
+              </svg>
+        </header>
+        <section class="container-lg" id="materias_cursando">
+            
+        </section>
+        <div class="px-4 d-flex justify-content-end">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="nuevo px-1 left bi bi-plus-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" id="borrar_cursando" width="40" height="40" fill="currentColor" class="bi bi-eraser-fill" viewBox="0 0 16 16">
+            <path d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm.66 11.34L3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z"/>
+          </svg>
+        </div>
+    </div>
+
+    <div data-vista="cursadas" id="cursadas" class="container-lg p-0">
+        <header class="container-lg px-2 d-flex gap-5 justify-content-center py-5">
+            <p class="fs-5 btn btn-warning rounded-pill px-3 restantes text-white col-2">Restantes</p>
+            <h1 class="blog-header-logo fs-3">Cursadas</h1>
+            <p class="fs-5 btn btn-dark rounded-pill px-3 cursando col-2">Cursando</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-info-lg info" viewBox="0 0 16 16">
+                <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"/>
+              </svg>
+        </header>
+        <section class="container-lg" id="materias_cursadas">
+            
+        </section>
+        <div class="px-4 d-flex justify-content-end">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="px-1 left bi bi-plus-circle-fill nuevo" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-eraser-fill" id="borrar_cursadas" viewBox="0 0 16 16">
+                    <path d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm.66 11.34L3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z"/>
+                  </svg>
+                </div>
+    </div>
+
+    <div data-vista="restantes" id="restantes" class="container-lg p-0">
+        <header class="container-lg px-2 d-flex gap-5 justify-content-center py-5">
+            <p class="fs-5 btn btn-success rounded-pill px-3 cursadas col-2">Cursadas</p>
+            <h1 class="blog-header-logo fs-3">Restantes</h1>
+            <p class="fs-5 btn btn-dark rounded-pill px-3 cursando col-2">Cursando</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-info-lg info" viewBox="0 0 16 16">
+                <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"/>
+              </svg>
+        </header>
+        <section class="container-lg " id="materias_restantes">
+            
+        </section>
+        <div class="px-4 d-flex justify-content-end">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="px-1 left bi bi-plus-circle-fill nuevo" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-eraser-fill" id="borrar_restantes" viewBox="0 0 16 16">
+                    <path d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm.66 11.34L3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z"/>
+                  </svg>
+                </div>
+    </div>
+
+    <div data-vista="ingresar" class="container-lg p-0">
+        <header class="container-lg text-center px-2 py-3 bg-dark text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle-fill cerrar" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/></svg>
+            <h1 class="fs-8">Agregar materia</h1>
+        </header>
+        <section>
+            <div class="needs-validation grid p-3">
+            <form>
+                <div class="row py-1">
+                <div class="col-6">
+                    <input type="text" placeholder="Materia..." class="form-control" required id="materia">
+                </div>
+                <div class="col-6">
+                    <input type="text" placeholder="Profesor..." class="form-control" required id="profesor">
+                </div></div>
+                <div class="row py-1">
+                <div class="col-3">
+                    <input type="time" class="form-control" required id="horario">
+                </div>
+                <div class="col-3">
+                    <input type="text" placeholder="Aula..." class="form-control" required id="aula">
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Nota 1..." class="form-control" id="nota_1">
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Nota 2..." class="form-control" id="nota_2">
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Nota 3..." class="form-control" id="nota_3">
+                </div></div>
+                <div class="grid">
+                <div class="form-check col-6">
+                    <p class="fs-5">Estado</p>
+                    <p><input type="radio" name="estado" class="form-check-input" requiered value="cursando">Cursando</input></p>
+                    <p><input type="radio" name="estado" class="form-check-input" requiered value="restantes">Restantes</input></p>
+                    <p><input type="radio" name="estado" class="form-check-input" requiered value="cursadas">Cursadas</input></p>
+                </div></div></div>
+                <div>
+                    <input class="btn btn-primary" type="submit" value="guardar">
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <div data-vista="modificar" class="container-lg p-0">
+        <header class="container-lg text-center px-2 py-3 bg-warning text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle-fill cerrar" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/></svg>
+            <h1 class="fs-8">Modificar materia</h1>
+        </header>
+        <section>
+            <div class="needs-validation grid p-3">
+            <form>
+                <div class="row py-1">
+                <div class="col-6">
+                    <input type="text" placeholder="Materia..." class="form-control" required id="materia-antigua">
+                </div>
+                <div class="col-6">
+                    <input type="text" placeholder="Profesor..." class="form-control" required id="profesor-antigua">
+                </div></div>
+                <div class="row py-1">
+                <div class="col-3">
+                    <input type="time" class="form-control" required id="horario-antigua">
+                </div>
+                <div class="col-3">
+                    <input type="text" placeholder="Aula..." class="form-control" required id="aula-antigua">
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Nota 1..." class="form-control" id="nota_1-antigua">
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Nota 2..." class="form-control" id="nota_2-antigua">
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Nota 3..." class="form-control" id="nota_3-antigua">
+                </div></div>
+                <div class="grid">
+                <div class="form-check col-6">
+                    <p class="fs-5">Estado</p>
+                    <p><input type="radio" name="estado" class="form-check-input" requiered value="cursando">Cursando</input></p>
+                    <p><input type="radio" name="estado" class="form-check-input" requiered value="restantes">Restantes</input></p>
+                    <p><input type="radio" name="estado" class="form-check-input" requiered value="cursadas">Cursadas</input></p>
+                </div></div>
+                <div>
+                    <input class="btn btn-primary" type="submit" value="guardar">
+                </div>
+            </form></div>
+        </section>
+    </div>
+
+
+    <div data-vista="info" class="container-lg p-0 col-3">
+            <div class="bg- p-4 text-center border-bottom-0 d-flex justify-content-around">
+              <h1 class=" fs-4 ">Alumnos</h1>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill cerrar" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/></svg>
+            </div>
+            <div class="py-0">
+              <p class="fs-6">Diseño multimedial. Diseño y programación web I. DMM3AP 2023.</p>
+            </div>
+            <div class="container-lg p-0 py-4 grid ">
+                <div class="row">
+                  <div class="col-4 text-center">
+                    <img src="/img/david.jpg" class="img-fluid rounded-circle">
+                    <p class="text-center fs-6">David Pomeraniec</p>
+                  </div>
+                  <div class="col-4 text-center">
+                    <img src="/img/nacho.png" class="img-fluid rounded-circle">
+                    <p class="fs-6">Ignacio Achar</p>
+                  </div>
+                  <div class="col-4 text-center">
+                    <img src="/img/lola.jpg" class="img-fluid rounded-circle">
+                    <p class="fs-6">Lola Tarica</p>
+                  </div>
+                </div>
+            </div>
+      </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="bootstrap.bundle.min.js.map"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
