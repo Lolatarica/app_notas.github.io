@@ -1,0 +1,9 @@
+[data-vista] {
+    position: relative;
+    min-height: 100vh;
+    display: none;
+}
+
+[data-vista="cursando"] {
+    display: block;
+}
