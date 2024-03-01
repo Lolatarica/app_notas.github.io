@@ -9,13 +9,8 @@
 }
 
 @media (max-width: 768px) {
-    #materias_cursadas {
-        padding-top: 50px;
+    .body {
+        padding-top: 60px;
     }
-    #materias_cursando {
-        padding-top: 50px;
-    }
-    #materias_restantes {
-        padding-top: 50px;
-    }
+    
 }
