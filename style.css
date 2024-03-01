@@ -1,4 +1,4 @@
-[data-vista] {
+data-vista] {
     position: relative;
     min-height: 100vh;
     display: none;
@@ -6,4 +6,16 @@
 
 [data-vista="cursando"] {
     display: block;
+}
+
+@media (max-width: 768px) {
+    #materias_cursadas {
+        padding-top: 50px;
+    }
+    #materias_cursando {
+        padding-top: 50px;
+    }
+    #materias_restantes {
+        padding-top: 50px;
+    }
 }
